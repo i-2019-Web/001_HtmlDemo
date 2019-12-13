@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## 项目目标
+    将所学知识【js,css,html】知识尽可能应用到工程当中，增加我们经验，工程实现过程中尽可能对用户（自己，团队，评审老师）负责，力求每位成员的取得一个理想分数。（初步的目标8.5）
+## 项目规划
+1.一期工程截止到**12月17日晚**
++ 12月14日晚前，确定主题和每位成员的页面架构。
++ 正常的话我会在12月14日晚上之前录一个我们gitbub的相关视频，这样的话就麻烦大家从14号之后每天需要有有github的记录。
++  12月17号晚上22点之前一期独立页面工程结束。
+2. 二期工程截止到**12月18日晚**
++ 页面完善，并进行网站搭建。
+3. 三期工程截止到**12月20日晚**
++ 进行项目交流，确保小组每位成员的熟悉度。截止到12月20日。
+## 项目材料
++ Web材料，上课的代码库可参考https://github.com/feiji110/001_DEMO
++ 群文件的相关材料希望可以帮到大家。
++ 网站材料选取：http://www.cssmoban.com/   //（图片材料可以照搬，css,js,html独立做工，可参考模板）
++ 网页主题的选取：个人或团队或文化介绍，商城，婚恋网站等 
++ 其实难度我觉得有三点：
+1. 素材得选取需要合适
+2. 页面制作所需特效需要尽可能适应所学知识,要求广度与深度
+3. 团队协作效率的提高
+> 总之，人生自是有缘，相逢未必偶然，可以组成一个team,更感到非常幸运，上面的文件是个人的一些想法，时间所限，难免些许差错，见谅海涵，最后剩下的就希望大家一起努力喽^_^。
 
-You can use the [editor on GitHub](https://github.com/i-2019-Web/001_HtmlDemo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/i-2019-Web/001_HtmlDemo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
