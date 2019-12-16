@@ -1,0 +1,139 @@
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+      ul,li{
+        list-style: none;
+      }
+      #smallBox{
+        width: 1302px;
+        background-color: #ccf;
+        float: left;
+        padding-top: 21px;
+        padding-left: 216px;
+        height: 42px;
+      }
+      .list>li{
+          display: inline-block;
+          margin-right: 186px;
+          background-color: #fff;
+       }
+       a{
+          text-decoration-line: none;
+          color: blue;
+       }
+       
+      #main{
+          float:left;
+          padding: 50px; 
+          width:600px;
+      }
+      #smallpic{
+          margin-left: 24px;
+          height:108px; 
+      }
+      #img{
+          width: 100px;
+          height: 90px;
+          float:left; 
+          margin-right:10px; 
+          margin-bottom:10px;
+      }
+      #smallpic img:hover{
+          cursor:pointer;
+      }
+      .pb{
+          border:1px solid red;
+      } 
+      #bigpic{
+        width: 600px;
+        height: 500px;
+      }
+     .list_con{ 
+      width: 800px;
+      float: left;  
+      height:24px;
+      bottom: 10px;
+      margin:10px auto 0;
+      position:relative;
+      overflow:hidden;
+     }
+
+      .list_con ul{
+          white-space: nowrap;
+          list-style:none;
+          width:2000px;
+          height:200px;
+          position:absolute;
+          left:0;
+          top:0;
+      }
+      .list_con li{
+          white-space: nowrap;
+          list-style: none;
+          width:1000px;
+          height:180px;
+          float:right;
+          margin:3px;
+          color: red;
+          font-size: 18px;
+          overflow: hidden;
+      }
+      .bigBox{
+          white-space: nowrap;
+          height: 32px;
+          background-color: #ccc;
+      }
+      #img1{
+          width: 18px;
+          margin-top: 6px;
+          margin-right: 14px;
+          float: left;
+          margin-left: 350px;
+      }
+
+      #wrap {
+          float: right;
+          padding-right: 192px;
+          width: 485px;
+          margin: 150px auto;
+
+      }
+
+      #mark {
+          line-height: 1.5em;
+      }
+
+      #mark h1 {
+          height: 29px;
+          background: url(../images/bg.jpg);
+          font-family: "黑体";
+          font-size: 12px;
+          color: blue;
+          line-height: 29px;
+          letter-spacing: 2px;
+          /* 字之间的距离 */
+      }
+
+      #pic {
+        margin: 10px 0px;
+      }
+
+      #txt {
+        color:blue; 
+        width: 100%;
+        height: 170px;
+        margin: 0px auto;
+      }
+
+      .btn {
+        float: right;
+        color: blue;
+        border:2px solid blue;
+        width: 75px;
+        height: 22px;
+        background: url(../images/sanjiao.png) no-repeat right center;
+        float: right;
+        margin-top: 5px;
+        margin-right: 28px;
+      }
