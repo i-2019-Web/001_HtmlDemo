@@ -1,93 +1,73 @@
-var oList = this.document.getElementById('list')
-	var box = document.getElementById("box");
-	var oNavlist = document.getElementById("nav").children;
-	var slider = document.getElementById("slider");
-	var left = document.getElementById("left");
-	var right = document.getElementById("right");
-	var index = 1;
-	var timer;
-	var isMoving = false;
-	window.onload = function(){
-	    var num = -400 
-	    var speed = -3
-	    var Timer = null
-	    oList.innerHTML += oList.innerHTML
-	    Timer = setInterval(fnMove, 50)
-	    function fnMove(){
-	        num += speed
-	        if(num < -1300){
-	            num = -200
-	        }
-	        if(num>0){
-	           num = -1000
-	        }
-	        oList.style.left = num +'px'
-	    }
-	}
-	box.onmouseover = function(){
-		animate(left,{opacity:50})
-		animate(right,{opacity:50})
-		clearInterval(timer)
-	}
-	box.onmouseout = function(){
-		animate(left,{opacity:0})
-		animate(right,{opacity:0})
-		timer = setInterval(next,3000);
-	}
-	right.onclick = next;
-	left.onclick = prev;
-	for (var i = 0; i < oNavlist.length; i++) {
-		oNavlist[i].index = i;
-		oNavlist[i].onclick = function(){
-			index = this.index+1;
-			navmove();
-			animate(slider,{left:-1200*index});
-		}
-	}
-	function next(){
-		if(isMoving){
-			return;
-		}
-		isMoving = true;
-		index++;
-		navmove();
-		animate(slider,{left:-1200*index},function(){
-			if (index ==6) {
-				slider.style.left = '-1200px';
-				index = 1;
-			}
-			isMoving = false;
-		});
-	}
-	function prev(){
-		if(isMoving){
-			return;
-		}
-		isMoving = true;
-		index--;
-		navmove();
-		animate(slider,{left:-1200*index},function(){
-			if(index == 0){
-				slider.style.left = '-6000px';
-				index = 5;
-			}
-			isMoving = false;
-		});
-	}
-	function navmove(){
-		for (var i = 0; i < oNavlist.length; i++) {
-			oNavlist[i].className = "";
-		}
-		if (index>1&&index<=5) {
-			oNavlist[0].className = "active1";
-			oNavlist[index-1].className = "active";
-		}else if (index>5) {
-			oNavlist[0].className = "active";
-		}
-		else if(index<=0){
-			oNavlist[4].className = "active";
-		}else{
-			oNavlist[index-1].className = "active";
-		}
-	}
-	timer = setInterval(next,3000);
+  var pic = document.getElementById("pic");
+  var imgList1 = pic.getElementsByTagName("img");
+  var txt=document.getElementById("txt");
+  var comments = ["差","一般","中等","还行","好"]; 
+  var flag=true;
+  var oList = this.document.getElementById('list')
+  var smallpic = document.getElementById('smallpic');
+  var imgList = smallpic.getElementsByTagName("img");
+  var bigPic = document.getElementById('bigpic');
+  window.onload = function(){
+      var num = -400 
+      var speed = -3
+      var Timer = null
+      oList.innerHTML += oList.innerHTML
+      Timer = setInterval(fnMove, 50)
+      function fnMove(){
+          num += speed
+          if(num < -1300){
+              num = -200
+          }
+          if(num>0){
+             num = -1000
+          }
+          oList.style.left = num +'px'
+      }
+  }  
+  for (var i = 0; i < imgList.length; i++) {
+      imgList[i].onclick = function(){
+        for (var j = 0; j < imgList.length; j++) {
+          imgList[j].setAttribute("class","");
+        }
+      this.setAttribute("class","pb");
+      var imgSrc = this.getAttribute("src");
+      bigPic.setAttribute("src",imgSrc);
+      }
+  }
+
+  for (var i = 0; i < imgList1.length; i++) {     
+         imgList1[i].onmouseover = function () {
+            if(flag==true){
+             var index = this.getAttribute("title");
+             if(index>2){
+                var imgSrc = "imgs/star2.png";
+            }
+            else if(index<=2){
+                var imgSrc = "imgs/star1.png"
+            }
+             for (var j = 0; j <index; j++) {
+                 imgList1[j].src = imgSrc;
+             }
+          txt.innerHTML= comments[index-1];
+         }
+
+        else{
+            return;
+        }
+    }   
+     imgList1[i].onmouseout = function(){
+        if(flag==true){
+        var index = this.getAttribute("title");
+         for (var j = 0; j <index; j++) {
+             imgList1[j].src = "imgs/star0.png";
+         }
+         txt.innerHTML=" ";}
+
+        else{
+            return;
+        }
+    }
+    imgList1[i].onclick = function(){
+        flag =!flag;
+     }
+ }
