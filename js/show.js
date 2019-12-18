@@ -86,11 +86,11 @@ img1.onmousemove = function(e){
     var imgPay = document.getElementById("pay");
     imgPay.setAttribute("src","");
     btnBao.onclick = function(){
-        imgPay.src = "imgs/img6.png";
+        imgPay.src = "imgs/img7.png";
         imgPay.style.display = "block";
     }
     btnWeChat.onclick = function() {
-        imgPay.src = "imgs/img7.png";
+        imgPay.src = "imgs/img6.png";
         imgPay.style.display = "block";
     }
     hide.onclick = function(){
