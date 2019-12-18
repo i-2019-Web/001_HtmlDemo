@@ -1,5 +1,4 @@
-
-	var aboutme = document.getElementById("aboutme");
+var aboutme = document.getElementById("aboutme");
 	var topright = document.getElementById("topboxright");
 	var activity = document.getElementById("activity");
 	var btn = document.getElementById("btn");
@@ -14,6 +13,7 @@
 	var cmoney = document.getElementsByClassName("cmoney");
 	var times = document.getElementsByClassName("times");
 	var news = document.getElementsByClassName("news");
+	var ret = document.getElementById("return");
 	var i = 0;
 	aboutme.onclick = function(){
 		page.style.display = "block";
@@ -32,6 +32,9 @@
 		paybox[0].style.display = "none";
 		aboutme.style.color = "#fff";
 		activity.style.color = "#fff";
+		this.style.color = "blue";
+	}
+	ret.onclick = function(){
 		this.style.color = "blue";
 	}
 	activity.onclick = function(){
