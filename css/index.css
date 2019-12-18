@@ -5,16 +5,21 @@
 ul,ol,li{
     list-style-type: none;
 }
+.bg{
+    background-image: url(../imgs/1.png);
+}
 a{
     text-decoration: none;
     color:black;
 }
 /* top */
 .top{
+
     width:60%;
     height:151px;
 }
 .top ul{
+    color: #ccc;
     width: 90%;
     height:20px;
     padding-left: 240px;
@@ -22,9 +27,14 @@ a{
     font:10px 'weiruanyahei'
 }
 .top li{
+    color: #ccc;
     display: inline-block;
 }
+.top a{
+    color: #ccc;
+}
 select{
+
     border: none;
     font:10px 'weiruanyahei'
 }
@@ -73,12 +83,14 @@ input:focus{
     padding:0 0;
 }
 .nav li{
+
     width:7%;
     text-align:center;
     padding:3px;
     margin-left:11px;
 }
 .nav a{
+    color: #ccc;
     display:block;
     padding-bottom:4px; 
     width:100%;
