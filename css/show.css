@@ -1,25 +1,26 @@
-#top{
-    width:1200px;
-    border:1px solid green;
-    height:20px;
+/* 整体框架 */
+#bg{
+    background-image: url(../imgs/1.png);
+    background-repeat: repeat;
+
+
 }
-#top a{
-    display: block;
-    float:right;
-    margin-right:100px;
+.list>li{
+
+    display: inline-block;
+    margin: 80px;
+}
+a{  
+    border: 1px solid;
+    color: red;
+    text-decoration-line: none;
 }
 #box{
     width:1200px;
     height:500px;
-    border:1px solid blue;
+    /* border:1px solid blue; */
 }
-#show{
-    display:block;
-    float:left;
-    width:49.5%;
-    height:100%;
-    border:1px solid blue;
-}
+
 #review{
     display:block;
     float:right;
@@ -31,4 +32,117 @@
     border:1px solid red;
     width: 1200px;
     height:50px;
+}
+/* show的放大镜效果 */
+#show{
+    display:block;
+    float:left;
+    margin:50px;
+    width:45%;
+    height:100%;
+    position:relative;
+}
+#img1{
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:0;
+    top:0;
+    border:1px solid burlywood;
+}
+#img1 p{
+    text-align: center;
+    color: #fff;
+}
+#slider{
+    width:50px;
+    height:50px;
+    position:absolute;
+    left:0;
+    top:0;
+    background:yellow;opacity:0.4;
+    cursor: move;
+    display:none; 
+    filter:alpha(opacity=40);
+}
+/* #information{
+    position:absolute;
+    left:0;
+    top:10%;
+    width:65.5%;
+    height:65.5%;
+}
+#information h1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left:5%;
+    margin-top: 50%;
+}
+#information span{
+    color:orange;
+    font-size: 20px;
+} */
+/* #price{
+    margin-top:5%;
+    width:90%;
+    height:25%;
+    background-color: #eee;
+} */
+#img2{
+    position:absolute;
+    right:0;
+    top:0;
+    display:none;
+    width:60.5%;
+    height:70.5%;
+    overflow:hidden;
+}
+#Bimg{
+    position:absolute;
+    left:0;
+    top:0;
+}
+/*buy*/
+#buy{
+    margin: 10px;
+    float: right;
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+#buy p{
+    color: blue;
+}
+/* pay部分*/
+#pay img{
+    display: none;
+}
+
+
+/* 滚动图片效果*/
+#div1{
+    position: relative;
+    border: 1px solid gray;
+    width: 960px;
+    margin: 50px auto;
+    height: 160px;
+    overflow: hidden;
+}
+#div1 ul{
+    position: absolute;
+    left: 0;
+}
+#div1 a{
+    border: 1px solid blue;   
+}
+#div1 ul li{
+    padding: 5px;
+    list-style: none;
+    width: 180px;
+    height: 150px;
+    float: left;
+}
+#div1 ul li img{
+    width: 100%;
+    height: 100%;
 }
