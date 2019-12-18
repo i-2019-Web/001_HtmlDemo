@@ -19,10 +19,10 @@
 			height: 300px;
 			border:2px solid #fff;
 			background-color:  #efecec;
-			background-image: url(../imgs/w11.png);
+			background-image: url(images/w11.png);
 			text-align: center;
 			position: absolute;
-			left: 228px;
+			left: 270px;
 			top: 206px;
 			display: none;
 		}
@@ -40,9 +40,9 @@
 		#BigBox{
 			width: 1280px;
 			height: 850px;
-			background-image: url(../imgs/1.png);
-			position: fixed;
-
+			background-image: url(images/1.png);
+			position: relative;
+			left: 50px;
 		}
 		img{
 			width: 500px;
@@ -70,15 +70,22 @@
 		#topboxright{
 			color: #fff;
 			position: relative;
-			left: 660px;
+			left: 620px;
 			top: -112px;
 			font:bolder;
 		}
 		#activity{
 			color: #fff;
 			position: relative;
-			left: 960px;
+			left: 900px;
 			top: -164px;
+			font:bolder;
+		}
+		#return{
+			color: #fff;
+			position: relative;
+			left: 1140px;
+			top: -216px;
 			font:bolder;
 		}
 		#text{
@@ -94,7 +101,7 @@
 			height: 400px;
 			position: relative;
 			left: 130px;
-			top: -100px;
+			top: -70px;
 			background-color: #23d6e7;
 		}
 		#simg{
