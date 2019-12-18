@@ -2,23 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>show1</title>
+    <title>show</title>
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/show.css">
 </head>
-<body >
+<body id="bg">
     <!-- 页首 -->
-    <div id="top">
-        <a href="#"><<<返回首页</a>
+    <div class="list">
+        <li><a href="#">返回首页</a></li>
+        <li><a href="#">古玩鉴赏</a></li>   
+        <li><a href="#">竞猜游戏</a></li> 
+        <li><a href="#">购物车</a></li> 
+        <li><a href="#">我的收藏</a></li> 
     </div>
     <!-- 页体 -->
     <div id = "box" >
-        <div id = "show"><p>放大镜</p></div>
-        <div id = "review"><p>商品鉴赏评级</p></div>
+        <div id = "show">
+            <div id="img2">
+               <img src="imgs/big_p7.png"  id="Bimg"/>   
+            </div> 
+            <div id="img1">
+                <img src="imgs/p7.png" width="200" height="200" id="Simg"/>
+                <div id="slider"></div>
+                <p>&nbsp&nbsp青铜酒樽（明代)</p>
+                <p>&nbsp&nbsp售价:&nbsp15599$</p>
+            </div>
+                       
+        </div>
+        
+        <div id = "buy">
+            <p>支付方式</p>
+            <button id = "btnWeChat">微信支付</button>
+            <button id = "btnBao">支付宝</button>
+            <button id = "hide">隐藏</button>
+            <img src="imgs/img6.png" id ="pay">
+        </div>
     </div>
     <!-- 页尾 -->
-    <div id ="tail">
-        <p>滚动通知</p>
+    <div id="div1">
+    <ul>
+        <a href=""><li><img src="imgs/p1.png"></li></a>
+        <a href=""><li><img src="imgs/p2.png"></li></a>
+        <a href=""><li><img src="imgs/p3.png"></li></a>
+        <a href=""><li><img src="imgs/p4.png"></li></a>
+        <a href=""><li><img src="imgs/p5.png"></li></a>
+        <a href=""><li><img src="imgs/p6.png"></li></a>
+    </ul>
     </div>
     <script src="js/show.js"></script>
 </body>
