@@ -1,0 +1,163 @@
+.paybox>input{
+			width: 280px;
+			height: 30px;
+			margin-bottom: 5px;
+		}
+		.tBtn{
+			width: 70px;
+			height: 28px;
+			color: #fff;
+			padding-top: 6px;
+			float: right;
+			position: relative;
+			top: -51px;
+			right: 50px;
+			background-color: blue;
+		}
+		.paybox{
+			width: 700px;
+			height: 300px;
+			border:2px solid #fff;
+			background-color:  #efecec;
+			background-image: url(images/w11.png);
+			text-align: center;
+			position: absolute;
+			left: 228px;
+			top: 206px;
+			display: none;
+		}
+		.pretrue{
+			text-align: center;
+			width: 150px;
+			height: 30px; 
+			padding-top: 7px;
+			color: #fff;
+			background-color: blue;
+			position: absolute;
+			left: 280px;
+			top:220px;
+		}
+		#BigBox{
+			width: 1280px;
+			height: 850px;
+			background-image: url(images/1.png);
+			position: fixed;
+
+		}
+		img{
+			width: 500px;
+			height: 460px;
+		}
+		#btn{
+			position: relative;
+			left: 220px;
+		}
+		#loge{
+			color: #fff;
+			position: relative;
+			left: 80px;
+			font-family: bold;
+			font-size: 60px;
+		}
+		#aboutme{
+			color: #fff;
+			position: relative;
+			left: 390px;
+			top: -58px;
+			color: blue;
+			font:bolder;
+		}
+		#topboxright{
+			color: #fff;
+			position: relative;
+			left: 660px;
+			top: -112px;
+			font:bolder;
+		}
+		#activity{
+			color: #fff;
+			position: relative;
+			left: 960px;
+			top: -164px;
+			font:bolder;
+		}
+		#text{
+			width: 400px;
+			height: 300px;
+			border: 2px solid #fff;
+			position: relative;
+			left: 50px;
+			top: 50px;
+		}
+		#page{
+			width: 500px;
+			height: 400px;
+			position: relative;
+			left: 130px;
+			top: -100px;
+			background-color: #23d6e7;
+		}
+		#simg{
+			position: relative;
+			left:500px;
+			top: -330px;
+		}
+		#jiazhi1{
+			background-color: #ffeb00;
+			width: 250px;
+			height: 400px;
+			font-size: 12px;
+			padding: 15px;
+			display: none;
+			position: relative;
+			left: 210px;
+			top: -110px;
+		}
+		#jiazhi2{
+			background-color: #c6ceda;
+			width: 250px;
+			height: 400px;
+			font-size: 12px;
+			padding: 18px;
+			display: none;
+			position: relative;
+			left: 490px;
+			top: -520px;
+		}
+		#jiazhi3{
+			background-color: #d6c3cb;
+			width: 250px;
+			height: 400px;
+			font-size: 12px;
+			padding: 18px;
+			display: none;
+			position: relative;
+			left: 770px;
+			top: -930px;
+		}
+		.cmoney{
+			height: 40px;
+			position: relative;
+			top: -36px;
+			left: 120px;
+		}
+		#scanf{
+			color:#ecb59c;
+			font-size: 15px;
+			position: relative;
+			left: -210px;
+			top: 10px;
+		}
+		.times{
+			position: relative;
+			top:0px;
+			left: 2px;
+			font-size: 40px;
+			color: red;
+		}
+		.news{
+			position: relative;
+			top: -130px;
+			font-size: 30px;
+			color: yellow;
+		}
