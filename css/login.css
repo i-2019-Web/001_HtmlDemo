@@ -1,0 +1,104 @@
+	#top{
+			width: 776px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+		.logo{
+			width: 209px;
+			height: 70px;
+			float: left;
+		}
+		.menu{
+			width: 300px;
+			margin-top:30px;
+			float:right;
+		}
+		.menu ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			display: inline;
+		}
+		.menu ul li{
+			color: #023785;
+			line-height: 21px;
+			float: right;
+			margin: 1px;
+			padding: 0; 
+		}
+		.menu ul li a{
+			color: #023785;
+			text-decoration:none;
+		}  
+		.menu ul li a:hover{
+			color: #c51e03;
+			text-decoration: underline;
+		}
+		#left{
+			width: 464px;
+			height: 175px;
+			float: left;
+			margin-left:  373px;
+			margin-top: 20px;
+			background-color: rgb(250,250,250);
+
+		}
+		.logonleft_box{
+			width: 464px;
+			height: 173px;
+			border: 2px solid rgb(208,207,206);
+		}
+		h6{
+			border-bottom:2px solid rgb(208,207,206);
+			text-align:left;
+			line-height:30px;
+			text-indent:36px;
+			font-family:宋体;
+			color:#333;
+			font-size:15px;
+			font-weight:bold;
+			float: top;
+			margin: 0;
+		}
+		.logonleft_box h6{
+			width: 464px;
+			height: 31px;
+		}
+		.logonleft_box h6 a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #333;
+		}
+		.logonleft_box h6 a:hover{
+			color: red;
+			text-decoration: underline;
+		}
+		.logonleft_box ul{
+			width: 464px;
+			height: 142px;
+			list-style-type:none;
+			float: left;		
+			margin:10px;
+			padding: 0;
+		}
+		.logonleft_box ul li{
+			text-align: left;
+			line-height: 24px;
+			font-size: 12px;
+		}
+		.logonleft_box ul li a{
+			text-decoration: none;
+		}		
+		.logonleft_box ul li a:hover{
+			text-decoration: underline;
+			color: red;
+		}
+		#right{
+			width: 290px;
+			height: 360px;
+			float: right;
+			margin-right: 372px;
+			margin-top: 20px;
+			background-color: rgb(250,250,250);
+			border: 2px solid rgb(208,207,206);
+		}
