@@ -44,11 +44,11 @@ var aboutme = document.getElementById("aboutme");
 		topright.style.color = "#fff";
 		aboutme.style.color = "#fff";
 		this.style.color = "blue";
-		var price = Math.ceil(Math.random() * 100000);
+		var price = Math.ceil(Math.random() * 1000000);
 		tBtn[0].onclick = function(){
 			var aprice = cmoney[0].value;
 			i++;
-			times[0].innerHTML = 10 - i + "次机会";
+			times[0].innerHTML = 5 - i + "次机会";
 			if(aprice < price){
 			news[0].innerHTML = "您猜小了！还有";
 			}
@@ -58,11 +58,19 @@ var aboutme = document.getElementById("aboutme");
 			else{
 				news[0].innerHTML = "您真厉害，恭喜您猜对了!";
 			}
-			if(i == 10){
+			if(i == 5){
 				news[0].innerHTML = "非常抱歉，您没能成功猜中-----";
+			}
+			if(i > 5){
+				alert("非常抱歉，您机会已用完，此商品的价格为￥" + price + "，请返回-----");
+				times[0].innerHTML = null;
+				news[0].innerHTML = null;
 			}
 		}
 	}
 	pretrue[0].onclick = function(){
 		paybox[0].style.display = "none";
+		page.style.display = "block";
+		activity.style.color = "#fff";
+		aboutme.style.color = "blue";
 	}
