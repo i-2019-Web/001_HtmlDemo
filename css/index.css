@@ -42,6 +42,7 @@ select{
 .search{
     width:47%;
     height:30px;
+    background-color: orange;
     position:relative;
     top:45px;
     left:60px;
@@ -132,7 +133,7 @@ input:focus{
     height: 60px;
     text-align: center;
     cursor: pointer;
-    color: ;
+/*     color: red ; */
     top: 175px;
     line-height: 50px;
     background: rgb(255,0,0);
@@ -298,7 +299,7 @@ td:hover{
     font:500 13px 'weiruanyahei' ;
 }
 .footer span{
-    dispaly:block;
+    display:block;
     font:9px 'weiruanyahei';
 }
 .footer img{
