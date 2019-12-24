@@ -1,4 +1,4 @@
-confirm("This is a 404 page,some errors must have happened.But do not worry, we will be bakc soon!");
+
 	function perfect(num,digit){
 		var zero = '';
     	for(var i = 0; i < digit; i++) {
