@@ -2,8 +2,6 @@
 #bg{
     background-image: url(../imgs/1.png);
     background-repeat: repeat;
-
-
 }
 .list>li{
 
@@ -11,27 +9,12 @@
     margin: 80px;
 }
 a{  
-    border: 1px solid;
     color: red;
     text-decoration-line: none;
 }
 #box{
     width:1200px;
-    height:500px;
-    /* border:1px solid blue; */
-}
-
-#review{
-    display:block;
-    float:right;
-    width:49.5%;
-    height:100%;
-    border:1px solid blue;
-}
-#tail{
-    border:1px solid red;
-    width: 1200px;
-    height:50px;
+    height:370px;
 }
 /* show的放大镜效果 */
 #show{
@@ -47,12 +30,10 @@ a{
     height:200px;
     position:absolute;
     left:0;
-    top:0;
     border:1px solid burlywood;
 }
-#img1 p{
-    text-align: center;
-    color: #fff;
+#img2{
+    z-index: 1;
 }
 #slider{
     width:50px;
@@ -65,29 +46,75 @@ a{
     display:none; 
     filter:alpha(opacity=40);
 }
-/* #information{
+/* 藏品信息区域 */
+#information{
     position:absolute;
-    left:0;
-    top:10%;
-    width:65.5%;
+    left:30%;
+    top:35%;
+    width:40%;
     height:65.5%;
+    /* border:1px solid red; */
+    line-height:"20px";
 }
 #information h1{
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left:5%;
-    margin-top: 50%;
-}
-#information span{
     color:orange;
     font-size: 20px;
-} */
-/* #price{
-    margin-top:5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+#information p{
+    color:pink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#price{
+    margin-top:2%;
     width:90%;
-    height:25%;
+    padding: 10px 0;
     background-color: #eee;
-} */
+    position:relative;
+    left:-20px;
+}
+#price>span{
+    color:orchid;
+    font-size: 25px;
+    margin-right: 20%;
+}
+#price a{
+    color:orangered;
+}
+#price a span{
+    font-size: 20px;
+}
+#cart{
+    margin:10px 10px 10px 10px;
+    width:100%;
+    height:20%;
+}
+#num{
+    height:40px;
+    width:12%;
+    text-align:center;
+    padding-top:15px;
+    background-color: white;
+    position:relative;
+    left:-45%;
+}
+#minus,#plus{
+    position:relative;
+    left:-18px;
+    height:14px;
+    width:5%;
+}
+#addtoCart{
+    width:30%;
+    height:15%;
+    background-color:red;
+    border: 1px solid transparent;  
+    outline: none;    
+    cursor: pointer;
+    position: absolute;
+    top:35%;
+}
 #img2{
     position:absolute;
     right:0;
@@ -111,38 +138,44 @@ a{
     text-align: center;
 }
 #buy p{
-    color: blue;
+    color:orangered;
 }
-/* pay部分*/
-#pay img{
-    display: none;
+#btnBao,#btnWeChat,#hide{
+    border:1px solid transparent;
+    outline:none;
+    background-color: salmon;
 }
-
-
 /* 滚动图片效果*/
 #div1{
-    position: relative;
-    border: 1px solid gray;
+    position:absolute;
+    top:70%;
+    left:10%;
     width: 960px;
-    margin: 50px auto;
     height: 160px;
+    margin: 50px auto; 
     overflow: hidden;
+    border: 1px solid gray;
 }
 #div1 ul{
     position: absolute;
-    left: 0;
+    left: 0;  /*为了后续的滚动 */
 }
-#div1 a{
-    border: 1px solid blue;   
-}
-#div1 ul li{
-    padding: 5px;
+#div1 li{
+    padding: 1px;
     list-style: none;
     width: 180px;
     height: 150px;
     float: left;
 }
-#div1 ul li img{
+#div1 a{
+    display: block;
+    margin-top: 4px;
+    width:95%;
+    height:99%;
+    border: 1px solid rgba(0, 0, 255, 0.603);  
+}
+ #div1 img{
     width: 100%;
     height: 100%;
 }
+
