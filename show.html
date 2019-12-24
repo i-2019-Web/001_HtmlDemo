@@ -9,11 +9,11 @@
 <body id="bg">
     <!-- 页首 -->
     <div class="list">
-        <li><a href="#">返回首页</a></li>
-        <li><a href="#">古玩鉴赏</a></li>   
-        <li><a href="#">竞猜游戏</a></li> 
-        <li><a href="#">购物车</a></li> 
-        <li><a href="#">我的收藏</a></li> 
+        <li><a href="index.html">返回首页</a></li>
+        <li><a href="show1.html">古玩鉴赏</a></li>   
+        <li><a href="interview1.html">藏品简历</a></li> 
+        <li><a href="my404.html">藏品库</a></li> 
+        <li><a href="my404.html">我的收藏</a></li> 
     </div>
     <!-- 页体 -->
     <div id = "box" >
@@ -24,30 +24,36 @@
             <div id="img1">
                 <img src="imgs/p7.png" width="200" height="200" id="Simg"/>
                 <div id="slider"></div>
-                <p>&nbsp&nbsp青铜酒樽（明代)</p>
-                <p>&nbsp&nbsp售价:&nbsp15599$</p>
-            </div>
-                       
+            </div>             
         </div>
-        
+        <div id = "information" align = "left"  >
+            <h1> &nbsp;青铜酒樽（明代)</h1>
+            <p>【高33CM】【口径9CM】【肚径19CM】【底径10.5CM】</p>
+            <div id ="price"> 京 东 价 <span>￥1633333.00</span><a>累计评价:<span>40+<span></a></div>
+            <div id="cart">
+                <div id ="num">1</div>>
+                <button id = "plus">+</button>
+                <button id = "minus">-</button>
+                <button id = "addtoCart" >加入藏品库</button>
+            </div>
+        </div>
         <div id = "buy">
             <p>支付方式</p>
             <button id = "btnWeChat">微信支付</button>
             <button id = "btnBao">支付宝</button>
             <button id = "hide">隐藏</button>
-            <img src="imgs/img6.png" id ="pay">
         </div>
     </div>
     <!-- 页尾 -->
     <div id="div1">
-    <ul>
-        <a href=""><li><img src="imgs/p1.png"></li></a>
-        <a href=""><li><img src="imgs/p2.png"></li></a>
-        <a href=""><li><img src="imgs/p3.png"></li></a>
-        <a href=""><li><img src="imgs/p4.png"></li></a>
-        <a href=""><li><img src="imgs/p5.png"></li></a>
-        <a href=""><li><img src="imgs/p6.png"></li></a>
-    </ul>
+        <ul>
+            <li><a href=""><img src="imgs/p1.png"></a></li>
+            <li><a href=""><img src="imgs/p2.png"></a></li>
+            <li><a href=""><img src="imgs/p3.png"></a></li>
+            <li><a href=""><img src="imgs/p4.png"></a></li>
+            <li><a href=""><img src="imgs/p5.png"></a></li>
+            <li><a href=""><img src="imgs/p6.png"></a></li>
+        </ul>
     </div>
     <script src="js/show.js"></script>
 </body>
