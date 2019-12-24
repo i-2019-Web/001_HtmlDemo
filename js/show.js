@@ -11,15 +11,15 @@ img1.onmouseover = function(){
     img2.style.display = "block";
 }
 img1.onmouseout = function(){
-    slider.style.display = "none";
-    img2.style.display = "none";
+    slider.style.display = "none";//滑块隐藏
+    img2.style.display = "none";//大图隐藏
 }
 img1.onmousemove = function(e){
   var mouseX = e.clientX;
   var mouseY = e.clientY;
   var showLeft = show.offsetLeft;
   var showTop = show.offsetTop;
-  var sliderWidth = slider.offsetWidth;//实时获取
+  var sliderWidth = slider.offsetWidth;
   var sliderHeight = slider.offsetHeight;
   var sliderLeft = mouseX - showLeft - sliderWidth/2;
   var sliderTop = mouseY - showTop -sliderHeight/2;
@@ -38,62 +38,76 @@ img1.onmousemove = function(e){
   slider.style.left = sliderLeft + "px";
   slider.style.top = sliderTop + "px";
 
-  var percent = Bimg.offsetWidth/Simg.offsetWidth;
+  var percent = Bimg.offsetWidth/Simg.offsetWidth;//放大比例
 
-  Bimg.style.left = (-sliderLeft*percent+224)/6 + 'px';
+  Bimg.style.left = (-sliderLeft*percent)/6 + 'px';
   Bimg.style.top = (-sliderTop*percent)/6 + "px";   
 }
-//图片滚动效果
+// 藏品的加减操作效果
+var plus = document.getElementById("plus");
+var num = document.getElementById("num");
+var minus = document.getElementById("minus");
+plus.onclick = function(){
+    num.innerHTML= num.innerHTML*1+1;
+}
+minus.onclick = function(){
+  if(num.innerHTML>=1){
+    num.innerHTML=num.innerHTML*1-1;
+  }
+}
+//增加至藏品库 
+var addtoCart = document.getElementById("addtoCart");
+addtoCart.onclick = function(){
+  if(num.innerHTML>=1){
+    alert("加入购物车成功！");
+  }else{
+    alert("藏品的件数不能是0");
+  }
+}
+/*
+支付效果
+*/ 
+// 获取对应按钮对象
+var buy = document.getElementById("buy");
+var btnWeChat = document.getElementById("btnWeChat");
+var btnBao = document.getElementById("btnBao");
+var hide = document.getElementById("hide");
+var imgPay = document.createElement("img");
+imgPay.style.display = "none";
+buy.appendChild(imgPay);//将创建的一个隐藏的图片添加到buy框中
+imgPay.style.height = "245px";
+imgPay.style.width = "200px";
+btnBao.onclick = function(){
+    imgPay.src = "imgs/img7.png"; 
+    imgPay.style.display = "block";
+}
+btnWeChat.onclick = function() {
+    imgPay.src = "imgs/img6.png";
+    imgPay.style.display = "block";
+}
+hide.onclick = function(){
+  imgPay.style.display = "none";
+}
+ //图片滚动效果
   window.onload = function(){
     var oDiv = document.getElementById('div1');
     var oUl = oDiv.getElementsByTagName('ul')[0];
     var aLi = oUl.getElementsByTagName('li');
-    var aA = oDiv.getElementsByTagName('a');
-    var iSpeed = 1;//正左负右
+    var iSpeed = 1;
     var timer = null;
-    //计算ul的宽为所有li的宽的和;
-    oUl.innerHTML += oUl.innerHTML+oUl.innerHTML;
-    oUl.style.width = aLi[0].offsetWidth*aLi.length+'px';
+    oUl.innerHTML += oUl.innerHTML+oUl.innerHTML;//3倍的图片
+    oUl.style.width = aLi[0].offsetWidth*aLi.length+'px';//将宽度加长
     function Slider(){
       if (oUl.offsetLeft<-oUl.offsetWidth/2) {
         oUl.style.left = 0;
-      }else if(oUl.offsetLeft>0){
-        oUl.style.left =-oUl.offsetWidth/2+'px';
       }
       oUl.style.left = oUl.offsetLeft-iSpeed+'px';//正负为方向
     }
     timer =setInterval(Slider,30);
-    aA[0].onclick = function(){
-      iSpeed = 1; //控制速度的正负
-    }
-    aA[1].onclick = function(){
-      iSpeed = -1;
-    }
     oDiv.onmouseover = function(){
       clearInterval(timer);
     }
     oDiv.onmouseout = function(){
       timer =setInterval(Slider,30);
     }
-  };
-
-/*
-支付效果
-*/ 
-    var btnWeChat = document.getElementById("btnWeChat");
-    var btnBao = document.getElementById("btnBao");
-    var hide = document.getElementById("hide");
-    var imgPay = document.getElementById("pay");
-    imgPay.setAttribute("src","");
-    btnBao.onclick = function(){
-        imgPay.src = "imgs/img7.png";
-        imgPay.style.display = "block";
-    }
-    btnWeChat.onclick = function() {
-        imgPay.src = "imgs/img6.png";
-        imgPay.style.display = "block";
-    }
-    hide.onclick = function(){
-      imgPay.style.display = "none";
-    }
-    
+  };   
