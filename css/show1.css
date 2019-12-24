@@ -1,28 +1,36 @@
-  *{
-        padding: 0px;
-        margin: 0px;
+       *{
+          padding: 0px;
+          margin: 0px;
       }
       ul,li{
-        list-style: none;
+          list-style: none;
+      }
+      .bg{
+          background-image: url(../imgs/img4.png);
+          background-repeat: repeat;
       }
       #smallBox{
-        width: 1302px;
-        background-color: #ccf;
-        float: left;
-        padding-top: 21px;
-        padding-left: 216px;
-        height: 42px;
+          width: 1302px;
+          background-color: #ccf;
+          float: left;
+          padding-top: 21px;
+          padding-left: 216px;
+          height: 42px;
       }
       .list>li{
           display: inline-block;
           margin-right: 186px;
           background-color: #fff;
        }
-       a{
+      .list>li:hover{
+          font-size: 18px;
+          color: #000;
+          background-color: red;
+      }
+      a{
           text-decoration-line: none;
           color: blue;
-       }
-       
+      }
       #main{
           float:left;
           padding: 50px; 
@@ -33,11 +41,10 @@
           height:108px; 
       }
       #img{
-          width: 100px;
-          height: 90px;
+          width: 70px;
+          height: 60px;
           float:left; 
           margin-right:10px; 
-          margin-bottom:10px;
       }
       #smallpic img:hover{
           cursor:pointer;
@@ -46,17 +53,17 @@
           border:1px solid red;
       } 
       #bigpic{
-        width: 600px;
-        height: 500px;
+          width: 600px;
+          height: 500px;
       }
      .list_con{ 
-      width: 800px;
-      float: left;  
-      height:24px;
-      bottom: 10px;
-      margin:10px auto 0;
-      position:relative;
-      overflow:hidden;
+          width: 800px;
+          float: left;  
+          height:24px;
+          bottom: 10px;
+          margin:10px auto 0;
+          position:relative;
+          overflow:hidden;
      }
 
       .list_con ul{
@@ -75,7 +82,7 @@
           height:180px;
           float:right;
           margin:3px;
-          color: red;
+          color: blue;
           font-size: 18px;
           overflow: hidden;
       }
@@ -85,11 +92,11 @@
           background-color: #ccc;
       }
       #img1{
-          width: 18px;
-          margin-top: 6px;
+          width: 102px;
+          margin-top: 3px;
           margin-right: 14px;
           float: left;
-          margin-left: 350px;
+          margin-left: 272px;
       }
 
       #wrap {
@@ -106,32 +113,38 @@
 
       #mark h1 {
           height: 29px;
+          background: url(../images/bg.jpg);
           font-family: "黑体";
           font-size: 12px;
           color: blue;
           line-height: 29px;
           letter-spacing: 2px;
-          /* 字之间的距离 */
       }
 
       #pic {
-        margin: 10px 0px;
+          margin: 10px 0px;
+      }
+      #span1{
+          color: red;
+          height: 24px;
+          line-height: 24px;
+          font-size: 14px;
       }
 
       #txt {
-        color:blue; 
-        width: 100%;
-        height: 170px;
-        margin: 0px auto;
+          color:blue; 
+          width: 100%;
+          height: 170px;
+          margin: 0px auto;
       }
 
       .btn {
-        float: right;
-        color: blue;
-        border:2px solid blue;
-        width: 75px;
-        height: 22px;
-        float: right;
-        margin-top: 5px;
-        margin-right: 28px;
+          float: right;
+          color: blue;
+          border:2px solid blue;
+          width: 75px;
+          height: 22px;
+          background: no-repeat right center;
+          margin-top: 5px;
+          margin-right: 28px;
       }
