@@ -248,13 +248,16 @@ td:hover{
     margin-left:24px;
     position:relative;
 }
+.show img{
+    height:163px;
+}
 .price{
     position:absolute;
     bottom:0px;
     left:0px;
     z-index:1;
     width:170px;
-    height:27px;
+    height:37px;
     background-color: rgba(0,0,0,.6);
     color:white;
     text-align: center;
