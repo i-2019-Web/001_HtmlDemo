@@ -1,16 +1,16 @@
-*{
-	padding: 0;
-	margin: 0;
-}
+		*{
+			padding: 0;
+			margin: 0;
+		}
 		#bg{
-			width: 1208px;
-			height: 615px;
+			width: 100%;
+			height: 100%;
 			background-color:#0f3854;
 		}
 		#BT{
 			font-size: 20px;
 			text-align: center;
-			line-height: 180px;
+			line-height: 297px;
 			font-style: italic;
 			color: #0aafe6;
 			background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
