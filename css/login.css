@@ -1,4 +1,8 @@
-	#top{
+		body{
+			background-size:  100%;
+			background-image: url("imgs/backgr.png");
+		}
+		#top{
 			width: 776px;
 			overflow: hidden;
 			margin: 0 auto;
@@ -34,6 +38,11 @@
 			color: #c51e03;
 			text-decoration: underline;
 		}
+		#container{
+			width: 1520px;
+			height: 600px;
+			margin: 0 auto;
+		}
 		#left{
 			width: 464px;
 			height: 175px;
@@ -41,7 +50,6 @@
 			margin-left:  373px;
 			margin-top: 20px;
 			background-color: rgb(250,250,250);
-
 		}
 		.logonleft_box{
 			width: 464px;
@@ -95,10 +103,44 @@
 		}
 		#right{
 			width: 290px;
-			height: 360px;
+			height: 38	0px;
 			float: right;
 			margin-right: 372px;
 			margin-top: 20px;
 			background-color: rgb(250,250,250);
 			border: 2px solid rgb(208,207,206);
+		}
+		.inp{
+			width: 98%;
+			height: 40px;
+			text-indent: 8px;
+		}
+		.notice{
+			height: 15px;
+			line-height: 25px;
+			font-size: 12px;
+		}
+		.code{
+			width: 60%;
+		}
+		.getCode{
+			width: 35%;
+			height: 44px;
+			float: right;
+			border: none;
+			background-color: #eee;
+		}
+		.codeImg{
+			height: 20px;
+			float: left;
+			margin-left: 70px;
+		}
+		.btn{
+			background: #1688ea;
+			width: 100%;
+			height: 40px;
+			border: none;
+			margin-top: 8px;
+			color: #fff;
+			border-radius: 3px;
 		}
