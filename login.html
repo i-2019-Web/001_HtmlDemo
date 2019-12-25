@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>login</title>
-  <link rel="stylesheet" type="text/css" href="css/login.css">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
 	<div id="top">
@@ -15,7 +16,7 @@
 					<a href="my404.html">帮助中心</a>
 				</li>
 				<li>|</li>
-				<li><a href="my404.html">汇款方式</a></li>
+				<li><a href="show.html">汇款方式</a></li>
 				<li>|</li>
 				<li>
 					<a href="index.html">首页</a>
@@ -26,7 +27,6 @@
 			</ul>
 		</div>
 	</div>
-	<div id="clearit"></div>
 	<div id="container">
 		<div id="left">
 			<div class="logonleft_box">
@@ -38,31 +38,31 @@
 				</h6>
 				<ul>
 					<li>
-						<a href="#">
+						<a href="my404.html">
 							· 艺术品天猫——行家汇APP重磅上线
 							<span>[2019-08-02]</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="my404.html">
 							· 送古币了！送古币了!
 							<span>[2019-04-30]</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="my404.html">
 							· 中华古玩网藏品入库仪式圆满举办
 							<span>[2019-02-22]</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="my404.html">
 							· 关于网站古币的调整公告
 							<span>[2018-10-31]</span>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="my404.html">
 							· 警惕！骗子猖獗！
 							<span>[2018-09-24]</span>
 						</a>
@@ -107,67 +107,23 @@
 		</div>
 		<div id="right">
 		  	<div class="logonlight_conter">
-		  	<h6>登录帐户</h6>
-			  	<div style="margin:20px 10px;">
-				    <form>
-						<input name="comeurl" type="hidden" value=""">
-						<table width="100%" border="0" cellspacing="0" cellpadding="0">
-					   		<tbody>
-					   			<tr>
-		                			<td width="31%">
-		                				<span style=" color:#023785;">用户名：</span>
-		                			</td>
-		                			<td width="69%">
-		                				<fieldset style="float:left;border:0;">
-		                  					<input name="UserName" id="UserName" style="margin:0; padding:1px; height:16px; width:115px;" type="text" value="">
-		                				</fieldset>
-		                			</td>
-		              			</tr>
-		              			<tr>
-		                			<td>
-		                				<span style=" color:#023785;">密&nbsp;&nbsp;码：</span>
-		                			</td>
-		               		 		<td>
-		               		 			<fieldset style="float:left;border:0;">
-		                  					<input name="UserPass" id="UserPass" style="margin:0; padding:1px; height:16px;  width:115px;" type="password">
-		                				</fieldset>
-		                			</td>
-		              			</tr>
-		            		</tbody>
-		            	</table>
-				    	<table width="100%" height="60" border="0" cellspacing="0" cellpadding="0">
-							<tbody>
-								<tr>
-						  			<td width="59%">
-						    			<label>
-						    				<input name="imageField" width="72" height="26" style="border:0px; float:right;margin-right: 50px;" type="image" src="imgs/icon_denglu.png" border="0">
-						    				<br>
-					      				</label>
-					      			</td>
-						  			<td width="41%">
-						  				<span style=" color:#023785; text-decoration: underline;">
-						  					<a href="#" target="_blank">忘记密码?</a>
-						  				</span>
-						  			</td>
-					  			</tr>
-								<tr>
-						  			<td colspan="2">&nbsp;</td>
-					  			</tr>
-				    		</tbody>
-				    	</table>
-				    </form>
-			    </div>
-				<div style="height:1px; margin-bottom:20px; border-bottom: 2px solid #d1cdce;"></div>
-				<h6 style="border:0">还没有注册？</h6>
-				<div style="margin:30px 10px;">
-					<a href="#" target="_blank">
-						<img width="159" height="37" style="border:0px;float: left;margin-left: 55px;margin-top: -20px;" src="imgs/icon_login.png" border="0">
-					</a>
+		  		<h6>登录帐户</h6>
+				<input class="inp" type="text" placeholder="用户名">
+				<p class="notice"></p>
+				<input class="inp" type="password" placeholder="密码">
+				<p class="notice"></p>
+				<div>
+					<input class="inp code" type="text" placeholder="验证码">
+					<button class="getCode">获取验证码</button>
 				</div>
+				<div class="codeImg">
+				</div>
+				<p class="notice"></p>
+				<input type="checkbox" checked>下次自动登录
+				<button class="btn">登录</button>
 			</div>
 		</div>
 	</div>
-	<div style="border-bottom: 2px solid #000;margin-top: 500px;"></div>
 </body>
-<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="login.js"></script>
 </html>
