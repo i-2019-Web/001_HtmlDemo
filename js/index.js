@@ -11,7 +11,20 @@ input.onfocus=function(){
 var cart=document.getElementById("cart");
 cart.onclick=function(){
 	alert("加入购物车成功！");
-	window.location.href="https:\\www.baidu.com";//这里点击进入购物车页面！！！
+}
+var qq=document.getElementById("qq");
+qq.onclick=function(){
+	window.location.href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&response_"+
+	"type=code&client_id=101477621&redirect_uri=https%3A%2F%2Fsso.e.qq.com%2Fpassport%3Fsso_redirect"+
+	"_uri%3Dhttp%253A%252F%252Funion.qq.com%252F%26service_tag%3D14&scope=get_user_info";
+}
+var wx=document.getElementById("wx");
+wx.onclick=function(){
+	window.location.href="https://mp.weixin.qq.com/";
+}
+var wb=document.getElementById("wb");
+wb.onclick=function(){
+	window.location.href="https://weibo.com/";
 }
 var gotop=document.getElementById("gotop");
 gotop.onclick=function(){	
