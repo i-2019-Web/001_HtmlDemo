@@ -3,24 +3,26 @@
     background-image: url(../imgs/1.png);
     background-repeat: repeat;
 }
+
 .list>li{
 
     display: inline-block;
-    margin: 80px;
+    margin:100px 110px ;
 }
 a{  
     color: red;
     text-decoration-line: none;
 }
 #box{
-    width:1200px;
+    width:100%;
     height:370px;
 }
 /* show的放大镜效果 */
 #show{
     display:block;
     float:left;
-    margin:50px;
+    margin-left:195px;
+    margin-top: 10px;
     width:45%;
     height:100%;
     position:relative;
@@ -50,7 +52,7 @@ a{
 #information{
     position:absolute;
     left:30%;
-    top:35%;
+    top:31%;
     width:40%;
     height:65.5%;
     /* border:1px solid red; */
@@ -113,7 +115,7 @@ a{
     outline: none;    
     cursor: pointer;
     position: absolute;
-    top:35%;
+    top:28%;
 }
 #img2{
     position:absolute;
@@ -149,7 +151,7 @@ a{
 #div1{
     position:absolute;
     top:70%;
-    left:10%;
+    left:18%;
     width: 960px;
     height: 160px;
     margin: 50px auto; 
@@ -178,4 +180,3 @@ a{
     width: 100%;
     height: 100%;
 }
-
